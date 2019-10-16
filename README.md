@@ -23,4 +23,3 @@ docker push gcr.io/$PROJECT_ID/hello-native-blas-libs
 ./gradlew jib -Djib.from.image=gcr.io/$PROJECT_ID/hello-native-blas-libs -Djib.to.image=gcr.io/$PROJECT_ID/hello-native-blas -Djib.to.auth.credHelper=gcr
 gcloud beta run deploy --image gcr.io/$PROJECT_ID/hello-native-blas --project $PROJECT_ID --platform managed --region us-central1 --allow-unauthenticated hello-native-blas
 ```
-

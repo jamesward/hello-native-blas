@@ -26,6 +26,9 @@ dependencies {
     implementation(kotlin("reflect"))
     implementation("io.micronaut:micronaut-runtime")
     implementation("io.micronaut:micronaut-http-server-netty")
+    implementation("com.github.haifengl:smile-interpolation:1.5.3")
+    implementation("com.github.haifengl:smile-netlib:1.5.3")
+    //implementation("com.github.fommil.netlib:all:1.1.2")
 
     runtimeOnly("ch.qos.logback:logback-classic:1.2.3")
 }
